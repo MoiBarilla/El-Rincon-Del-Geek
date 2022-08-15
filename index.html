@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--Scroll Reveal Script-->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="index.css">
+    <title>El Rincón del Geek</title>
+</head>
+
+<body>
+
+    <!------------------------------------------------  INICIO NAVBAR --------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+        <p class="text-center pt-2 text-primary logo">El Rincón Del Geek</p>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto nav-height">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://randomuser.me/api/">Random User Api</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="iniciarsesion.html">Iniciar Sesión</a>
+                        <a class="dropdown-item" href="contactenos.html">Contáctenos</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+
+    <!------------------------------------------------  JUMBOTRÓN  ------------------------------------------------>
+    <div class="jumbotron img">
+        <div class="titulo">
+            <h1 class="text-center text-white titulo-1"><strong>¿Quienes Somos?</strong></h1>
+        </div>
+        <p class="text-center text-white pr-5 pl-5 texto-1"><strong>El Rincon Del Geek</strong> es una idea que nació en el año 2021. Nos encargamos de compartir información importante acerca de la tecnología. Pero no nos limitamos solamente a compartir información acerca de las últimas novedades tecnológicas
+            si no que también ofrecemos cursos de tecnología, tales como <strong>Desarrollo Web: Front-End, Back-End y Full Stack</strong>. Además ofrecemos cursos de <strong>Bases de Datos</strong> entre ellos <strong>MySql, MongoDB</strong> y mucho
+            más.
+        </p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg mt-3" role="button" data-toggle="modal" data-target="#jumboEmergente" onclick="verinfo()">Ver 
+                Información de Usuarios
+            </a>
+        </p>
+    </div>
+
+    <main>
+        <!-------------------------------------------  VENTANA MODAL  --------------------------------------------->
+        <div id="jumboEmergente" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modelTitleId">
+            <div class="modal-dialog">
+                <div class="modal-content d-flex bg-white">
+
+                    <div class="modal-header bg-dark">
+                        <div class="d-block m-auto">
+                            <h1 class="text-primary logo-modal">El Rincón del Geek</h1>
+                        </div>
+                        <div class="d-block mr-3">
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                    </div>
+
+                    <div id="foto" class="w-100 pt-2">
+                        <img class="rounded-circle d-block m-auto" width="140px" height="140px" src="" alt="">
+                    </div>
+
+                    <h2 id="contenido" class="text-center text-secondary"></h2>
+                    <p id="descripcion" class="text-center text-secondary"></p>
+
+                    <!------------------------------------  ICONOS DE LA VENTANA MODAL  --------------------------->
+                    <div class="cont-icons">
+
+                        <div class="icon-box">
+                            <img id="nombreDom" src="img/user-1_icon-icons.com_65106.png" class="icon" alt="">
+                        </div>
+                        <div class="icon-box">
+                            <img id="emailDom" src="img/inbox_letter_contact_envelope_mail_email_icon_220346.png" class="icon" alt="">
+                        </div>
+                        <div class="icon-box">
+                            <img id="cumpleañosDom" src="img/day15oncalendar_120825.png" class="icon" alt="">
+                        </div>
+                        <div class="icon-box">
+                            <img id="ubicacionDom" src="img/location_4679.png" class="icon" alt="">
+                        </div>
+                        <div class="icon-box">
+                            <img id="telefonoDom" src="img/telephone-receiver_icon-icons.com_56033.png" class="icon" alt="">
+                        </div>
+                        <div class="icon-box">
+                            <img id="usuarioDom" src="img/closed-lock_icon-icons.com_56097.png" class="icon" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center w-100">
+                        <button id="botonmodal" class="btn btn-primary w-75 mt-1 mb-1" type="button" onclick="verinfo()">Cambiar Persona</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------------------  CONTAINER CARDS  ------------------------------------------->
+        <div class="row">
+            <div id="testimonios" class="container marketing principal">
+                <div class="row p-5 rounded-lg d-flex justify-content-around">
+                    <div class="w-100">
+                        <h2 class="text-center">Lee los Testimonios de Nuestros Alumnos</h2>
+                    </div>
+
+                    <!---------------------------------  PRIMERA CARD  -------------------------------------------->
+                    <div class="col-lg-4 col-sm-12 pt-5">
+                        <div id="info1">
+                            <div>
+                                <img class="rounded-circle rounded-lg d-block m-auto" width="140px" height="140px" src="img/Estudiante1.png" alt=" ">
+                            </div>
+
+                            <h2 class="text-center">Alice</h2>
+                            <p class="text-center">La academia es lo mejor me ha preparado de una manera excelente y ahora soy una desarrolladora web profesional, me dedico a la parte del cliente (<strong>Front-end</strong>) pero planeo seguir estudiando ya que me gusta mucho
+                                lo que hago.
+                            </p>
+                        </div>
+                        <div>
+                            <button id="infoToggle1" class="btn btn-primary btn-block" role="button">Detalles &raquo;</button>
+                        </div>
+                    </div>
+                    <!---------------------------------  SEGUNDA CARD  -------------------------------------------->
+                    <div class="col-lg-4 pt-5">
+                        <div id="info2">
+                            <div>
+                                <img class="rounded-circle rounded-lg d-block m-auto" width="140px" height="140px" src="img/estudiante2.jpg" alt=" ">
+                            </div>
+
+                            <h2 class="text-center">Marck</h2>
+                            <p class="text-center">Yo estudié en la academía, no fue facil. Al principio me costaba mucho pero gracias a la paciencia y la dedicación de los profesores ahora soy un <strong>Full Stack Developer</strong>. Creo que si no hubiera sido por la inspiración
+                                y el ánimo que ellos me daban hubiera desistido.
+                            </p>
+                        </div>
+                        <div>
+                            <button id="infoToggle2" class="btn btn-primary btn-block" href="#" role="button">Detalles &raquo;</button>
+                        </div>
+                    </div>
+                    <!----------------------------------  TERCERA CARD  ------------------------------------------->
+                    <div class="col-lg-4 pt-5">
+                        <div id="info3">
+                            <div>
+                                <img class="rounded-circle rounded-lg d-block m-auto" width="140px" height="140px" src="img/estudiante3.jpg" alt=" ">
+                            </div>
+
+                            <h2 class="text-center">Charlott</h2>
+                            <p class="text-center"> Hace algún tiempo había estudiado <strong>Bases de Datos y Back-End</strong> y la verdad me gustó mucho así que decidí estudiar también <strong>Front end</strong> y ahora soy una desarrolladora muy buena.
+                            </p>
+                        </div>
+                        <div>
+                            <button id="infoToggle3" class="btn btn-primary btn-block" href="#" role="button">Detalles &raquo;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!---------------------------------------------  MAPA  -------------------------------------------->
+
+                <div class="direccion">
+                    <h3 class="text-center">Estamos Ubicados en el Centro Social El Surá en Cariari, Pococí, Limón. Puedes visitarnos cuando gustes o escribenos un e-mail y te informaremos de nuestros cursos y los precios que manejamos.</h3>
+
+                    <iframe class="mapscroll" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448.74937530470464!2d-83.73428660136803!3d10.35950666066736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0b0391b50a671%3A0x793e59828eae9bf5!2sCentro%20Social%20El%20Sura!5e0!3m2!1ses!2scr!4v1657229742531!5m2!1ses!2scr"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!--------------------------------------------  SECTION  ------------------------------------------>
+                <hr class="featurette-divider">
+
+                <section class="d-inline-block w-100">
+                    <div class="row featurette">
+                        <div class="col-md-7 order-md-2 scroll-txt">
+                            <h2 class="featurette-heading">Somos Lo Mejor de lo mejor. <span class="text-muted">No nos crees, mira por ti mismo.</span></h2>
+                            <p class="lead">Nuestros alumnos y las personas que leen nuestros artículos no mienten. Te retamos a comprobarlo. Como instituto nos comprometemos a dar lo mejor de nosotros mientras te enseñamos a ser un profesional.
+                            </p>
+                        </div>
+                        <div class="col-md-5 order-md-1">
+                            <img class="w-100 imgdireccion" src="img/instalaciones.png" alt="Foto del Centro Social El Surá">
+                        </div>
+                    </div>
+
+                    <div class="w-100 d-flex justify-content-around mt-5">
+                        <ul class="ulsec list-unstyled d-flex w-75 justify-content-around flex-wrap">
+                            <li>Hecho por: Moises Barilla F.</li>
+                            <li>E-mail: moi.barilla@gmail.com</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <hr class="featurette-divider">
+
+                <!------------------------------------------------  FOOTER  ------------------------------------------->
+                <footer class="container">
+                    <p class="float-right"><a href="#">Back to top</a></p>
+                    <p class="text-center">&copy; 2021-2022 Moises Barilla F. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                </footer>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <!--Main Js-->
+    <script src="scripts/main.js"></script>
+    <!--Ventana Modal-->
+    <script src="scripts/modal.js"></script>
+
+</body>
+
+</html>

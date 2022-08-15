@@ -1,0 +1,119 @@
+/*********************************************** ESTILOS GLOBALES *************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kameron&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #fefefe;
+    font-family: 'Kameron', serif;
+    font-size: 22px;
+    margin: auto;
+}
+
+
+/***************************************************** NAV LOGO ***************************************************/
+
+.logo {
+    font-size: 22px;
+    font-family: 'Pacifico', cursive;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+/********************************************** ESTILOS VENTANA EMERGENTE *****************************************/
+
+.logo-modal {
+    font-size: 22px;
+    font-family: 'Pacifico', cursive;
+}
+
+.cont-icons {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.icon {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-box:hover {
+    border-radius: 5px;
+    background: #8abaf0;
+    padding: 12px;
+    width: 50px;
+}
+
+
+/****************************************************** JUMBOTRON *************************************************/
+
+.titulo-1 {
+    font-size: 72px;
+    font-weight: lighter;
+}
+
+.texto-1 {
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+.img {
+    margin-top: 11px;
+    background: linear-gradient(#000000, transparent), url(img/jm.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: fit-content;
+}
+
+.principal {
+    background: linear-gradient(#8abaf0, #ffffff);
+}
+
+
+/******************************************************* DIRECCIÓN ************************************************/
+
+.imgdireccion {
+    box-shadow: 3px 3px 7px 5px;
+}
+
+
+/*************************************************** MEDIA QUERY'S ************************************************/
+
+@media screen and (max-width:575px) {
+    main {
+        width: 90%;
+    }
+    .titulo-1 {
+        font-size: 32px;
+        margin-top: 25px;
+    }
+    .texto-1 {
+        font-size: 20px;
+    }
+    .img {
+        width: 100%;
+        margin-top: 30px;
+    }
+    #info1 img,
+    #info2 img,
+    #info3 img {
+        height: 150px;
+        width: 150px;
+    }
+}

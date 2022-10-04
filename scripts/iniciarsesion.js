@@ -18,3 +18,9 @@ sr.reveal('.formcolor', {
     duration: 3000,
     origin: 'bottom'
 });
+
+let inicioSesion = document.getElementById('inicioSesion');
+
+inicioSesion.addEventListener('click', (e) => {
+e.preventDefault();
+});
